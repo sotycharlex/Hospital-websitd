@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php 
-$con=mysqli_connect("localhost","root","","myhmsdb");
+$con=mysqli_connect("us-cdbr-east-04.cleardb.com","bfc1bc96a6bd22","e3f0bee3","myhmsdb");
 
 include('newfunc.php');
 
@@ -272,7 +272,7 @@ if(isset($_POST['docsub1']))
                 </thead>
                 <tbody>
                   <?php 
-                    $con=mysqli_connect("localhost","root","","myhmsdb");
+                    $con=mysqli_connect("us-cdbr-east-04.cleardb.com","bfc1bc96a6bd22","e3f0bee3","myhmsdb");
                     global $con;
                     $query = "select * from doctb";
                     $result = mysqli_query($con,$query);
@@ -323,7 +323,7 @@ if(isset($_POST['docsub1']))
                 </thead>
                 <tbody>
                   <?php 
-                    $con=mysqli_connect("localhost","root","","myhmsdb");
+                    $con=mysqli_connect("us-cdbr-east-04.cleardb.com","bfc1bc96a6bd22","e3f0bee3","myhmsdb");
                     global $con;
                     $query = "select * from patreg";
                     $result = mysqli_query($con,$query);
@@ -379,7 +379,7 @@ if(isset($_POST['docsub1']))
                 </thead>
                 <tbody>
                   <?php 
-                    $con=mysqli_connect("localhost","root","","myhmsdb");
+                    $con=mysqli_connect("us-cdbr-east-04.cleardb.com","bfc1bc96a6bd22","e3f0bee3","myhmsdb");
                     global $con;
                     $query = "select * from prestb";
                     $result = mysqli_query($con,$query);
@@ -451,7 +451,7 @@ if(isset($_POST['docsub1']))
                 <tbody>
                   <?php 
 
-                    $con=mysqli_connect("localhost","root","","myhmsdb");
+                    $con=mysqli_connect("us-cdbr-east-04.cleardb.com","bfc1bc96a6bd22","e3f0bee3","myhmsdb");
                     global $con;
 
                     $query = "select * from appointmenttb;";
@@ -561,7 +561,7 @@ if(isset($_POST['docsub1']))
                 <tbody>
                   <?php 
 
-                    $con=mysqli_connect("localhost","root","","myhmsdb");
+                    $con=mysqli_connect("us-cdbr-east-04.cleardb.com","bfc1bc96a6bd22","e3f0bee3","myhmsdb");
                     global $con;
 
                     $query = "select * from contact;";

@@ -85,7 +85,7 @@ include("header.php");
           <div class="card" style="font-family: 'Open Sans', sans-serif;">
             <div class="card-body">
               <center>
-                <i class="fa fa-hospital-o fa-3x" aria-hidden="true" style="color:#007bff"></i>
+                <i class="fa fa-hospital-o fa-3x" aria-hidden="true" style="color:#B5DEFF"></i>
                 <br>
               <h3 style="margin-top: 10%">Patient Login</h3><br>
               <form class="form-group" method="POST" action="func.php">

@@ -2,7 +2,7 @@
 <?php 
 include('func.php');  
 include('newfunc.php');
-$con=mysqli_connect("localhost","root","","myhmsdb");
+$con=mysqli_connect("us-cdbr-east-04.cleardb.com","bfc1bc96a6bd22","e3f0bee3","myhmsdb");
 
 
   $pid = $_SESSION['pid'];
@@ -80,7 +80,7 @@ if(isset($_GET['cancel']))
 
 
 function generate_bill(){
-  $con=mysqli_connect("localhost","root","","myhmsdb");
+  $con=mysqli_connect("us-cdbr-east-04.cleardb.com","bfc1bc96a6bd22","e3f0bee3","myhmsdb");
   $pid = $_SESSION['pid'];
   $output='';
   $query=mysqli_query($con,"select p.pid,p.ID,p.fname,p.lname,p.doctor,p.appdate,p.apptime,p.disease,p.allergy,p.prescription,a.docFees from prestb p inner join appointmenttb a on p.ID=a.ID and p.pid = '$pid' and p.ID = '".$_GET['ID']."'");
@@ -140,7 +140,7 @@ if(isset($_GET["generate_bill"])){
 }
 
 function get_specs(){
-  $con=mysqli_connect("localhost","root","","myhmsdb");
+  $con=mysqli_connect("us-cdbr-east-04.cleardb.com","bfc1bc96a6bd22","e3f0bee3","myhmsdb");
   $query=mysqli_query($con,"select username,spec from doctb");
   $docarray = array();
     while($row =mysqli_fetch_assoc($query))
@@ -307,7 +307,7 @@ function get_specs(){
                   
                   <!-- <?php
 
-                        $con=mysqli_connect("localhost","root","","myhmsdb");
+                        $con=mysqli_connect("us-cdbr-east-04.cleardb.com","bfc1bc96a6bd22","e3f0bee3","myhmsdb");
                         $query=mysqli_query($con,"select username,spec from doctb");
                         $docarray = array();
                           while($row =mysqli_fetch_assoc($query))
@@ -464,7 +464,7 @@ function get_specs(){
                 <tbody>
                   <?php 
 
-                    $con=mysqli_connect("localhost","root","","myhmsdb");
+                    $con=mysqli_connect("us-cdbr-east-04.cleardb.com","bfc1bc96a6bd22","e3f0bee3","myhmsdb");
                     global $con;
 
                     $query = "select ID,doctor,docFees,appdate,apptime,userStatus,doctorStatus from appointmenttb where fname ='$fname' and lname='$lname';";
@@ -540,7 +540,7 @@ function get_specs(){
                 <tbody>
                   <?php 
 
-                    $con=mysqli_connect("localhost","root","","myhmsdb");
+                    $con=mysqli_connect("us-cdbr-east-04.cleardb.com","bfc1bc96a6bd22","e3f0bee3","myhmsdb");
                     global $con;
 
                     $query = "select doctor,ID,appdate,apptime,disease,allergy,prescription from prestb where pid='$pid';";

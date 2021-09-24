@@ -1,5 +1,5 @@
 <?php 
-$con=mysqli_connect("localhost","root","","myhmsdb");
+$con=mysqli_connect("us-cdbr-east-04.cleardb.com","bfc1bc96a6bd22","e3f0bee3","myhmsdb");
 if(isset($_POST['btnSubmit']))
 {
 	$name = $_POST['txtName'];
